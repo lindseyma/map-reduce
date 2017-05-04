@@ -6,8 +6,8 @@ def single(word):
 	word=word.lower()
 	return len(filter(lambda c: c.lower() == word, words))
 
-print single("the")
-print single("Lizzy")
+print "Frquency of 'the' is " + str(single("the"))
+print "Freq of 'Lizzy' is " + str(single("Lizzy"))
 
 ##find the total frequency of a group of words
 def group(words):
@@ -16,7 +16,7 @@ def group(words):
 	##use reduce to add each frequency in list
 	return reduce(lambda a,b: a+b, frequencyList)
 
-print group(["the", "Lizzy"])
+print "freq of both 'the' and 'lizzy' is " + str(group(["the", "Lizzy"]))
 
 ##most frequently occuring word
-##def most():
+#def most():
